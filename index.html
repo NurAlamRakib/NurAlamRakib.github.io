@@ -460,6 +460,38 @@
             </div>
         </div>
     </section>
+    <!-- Paper 4 -->
+                <article class="reveal glass-card rounded-3xl p-6 sm:p-8 bg-white dark:bg-darkCard border border-slate-200/80 dark:border-slate-800 shadow-sm">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                        <div class="flex items-center gap-2">
+                            <span class="px-3 py-1 rounded-full bg-amber-500/15 text-amber-600 dark:text-amber-400 text-xs font-mono font-semibold">
+                                <i class="fa-solid fa-file-lines mr-1"></i>Manuscript Ready for Submission
+                            </span>
+                            <span class="text-xs font-mono text-slate-400">2026</span>
+                        </div>
+                        <span class="text-xs font-mono text-indigo-500 dark:text-cyan-400">Edge AI • Multimodal Sensor Fusion</span>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">
+                        SkySense-EdgeNet: Multi-Modal Campus and Urban Micro-Weather and Heat-Stress Forecasting Using Edge Vision and Sensor Fusion
+                    </h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 mb-4">
+                        <strong>Authors:</strong> <span class="underline decoration-cyan-500">Nur Alam Rakib</span>
+                    </p>
+
+                    <div id="abstract-4" class="hidden mb-4 p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                        <strong>Abstract:</strong> Hyper-local urban and campus micro-weather forecasting—particularly short-term heat-stress prediction—is vital for outdoor occupational health, smart campus energy optimization, and localized climate resilience. Conventional automated weather stations rely exclusively on scalar environmental sensors, which fail to anticipate rapid atmospheric transitions such as approaching cloud advection and sudden solar irradiance fluctuations over 30-to-60-minute lead times. Conversely, cloud-hosted deep vision architectures incur high inference latency, network bandwidth overhead, and deployment costs unsuitable for low-power edge nodes. In this study, we propose SkySense-EdgeNet, a lightweight, sub-megabyte multi-modal Edge AI architecture that fuses ground-based whole-sky imagery with low-cost scalar meteorological telemetry via a Gated Multimodal Attention Fusion layer. Evaluated across 242,601 synchronized daytime records from the Folsom Sky Image and Weather Dataset under strict chronological splitting, SkySense-EdgeNet achieves a 60-minute ambient temperature Mean Absolute Error (MAE) of 0.9500 °C (R² = 0.7621) and a 60-minute Heat Index MAE of 0.9375 °C (R² = 0.7936), outperforming the sensor-only baseline by 18.2% in 60-minute temperature MAE and +0.1114 in R². Furthermore, exported to ONNX FP32 format, the entire network occupies only 0.33 MB and executes single-sample CPU inference in 1.07 ms (934.6 FPS), while post-training dynamic INT8 quantization preserves predictive accuracy within 0.005 °C MAE—demonstrating practical viability for real-time, low-cost edge deployment.
+                    </div>
+
+                    <div class="flex flex-wrap items-center gap-3 pt-2">
+                        <button onclick="toggleAbstract('abstract-4')" class="px-4 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-xs font-semibold text-slate-700 dark:text-slate-200 transition-colors">
+                            <i class="fa-solid fa-align-left mr-1.5 text-cyan-500"></i>Toggle Abstract
+                        </button>
+                        <a href="https://github.com/NurAlamRakib/SkySense-EdgeNet" target="_blank" class="px-4 py-2 rounded-xl bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-600 dark:text-cyan-400 border border-cyan-500/30 text-xs font-semibold transition-colors">
+                            <i class="fa-brands fa-github mr-1.5"></i>View Implementation
+                        </a>
+                    </div>
+                </article>
 
     <!-- ==================== FEATURED PROJECTS ==================== -->
     <section id="projects" class="py-20">
